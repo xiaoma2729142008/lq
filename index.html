@@ -7,8 +7,8 @@
     <title>Document</title>
     <style>
         table {
-            width: 500px;
-            margin: 100px auto;
+            width: 1000px;
+            margin: 50px auto;
             border-collapse: collapse;
             text-align: center;
         }
@@ -28,7 +28,7 @@
     <table cellspacing="0">
         <thead>
             <tr>
-                <th></th>
+                <th>xiaoma:</th>
             </tr>
         </thead>
         <tbody>
@@ -37,15 +37,19 @@
     <script>
         //1.准备数据
         var tbody = document.querySelector('tbody');
-        for (var i = 0; i < 2000; i++) {
+        for (var i = 0; i < 20; i++) {
             //2.创建tr行
             var tr = document.createElement('tr');
             tbody.appendChild(tr);
             //3.创建普通单元格
-				var td = document.createElement('td');
+            for (let index = 0; index < 10; index++) {
+                var td = document.createElement('td');
 				//把当前对象里面的属性值给td
-				td.innerHTML = "1111"; 
+				td.innerHTML = "我爱林晴"; 
 				tr.appendChild(td);
+                
+            }
+				
         } 
       
     </script>
